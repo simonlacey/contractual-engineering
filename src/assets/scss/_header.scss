@@ -1,0 +1,155 @@
+.header-wrapper {
+  padding: rem-calc(15 30);
+
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    //align-items: center;
+  }
+
+  .logo-section {
+    flex: 1 1 auto;
+  }
+
+  .logo {
+    width: 300px;
+    height: auto;
+  }
+
+  .cta-tollfree-section {
+    display: flex;
+    //flex-direction: row;
+    //flex: 1 1 auto;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: right;
+    margin-top: 5px;
+  }
+}
+
+//.header-container {
+//  display: flex;
+//  flex-direction: row;
+//  align-items: center;
+//  justify-content: space-between;
+//  background-color: rgba(255,255,255,0);
+//  color: $white;
+//  padding: rem-calc(15 30);
+//  max-height: 10vh;
+//
+//  .brand-name {
+//    display: none;
+//    font-size: 1.85rem;
+//    font-weight: 700;
+//    text-transform: uppercase;
+//    margin-bottom: rem-calc(0);
+//  }
+//
+//  .header-tollFree-number {
+//    font-size: 1.5rem;
+//    font-weight: 700;
+//    color: $white;
+//  }
+//
+//}
+
+//.header {
+//  padding: rem-calc(15);
+//  height: 7vh;
+//  background-color: $primary-color;
+//  .logo {
+//    font-size: 1.5rem;
+//    font-weight: 700;
+//    text-transform: uppercase;
+//  }
+//  .contact-number {
+//    font-size: 1.5rem;
+//    font-weight: 700;
+//  }
+//}
+
+//.siteHeader {
+//  display: flex;
+//  justify-content: space-between;
+//  padding: rem-calc(10);
+//
+//  .siteHeader-section {
+//    display: flex;
+//    align-items: center;
+//  }
+//
+//  .siteHeader-logo {
+//    font-size: 1.5rem;
+//    font-weight: 700;
+//    text-transform: uppercase;
+//  }
+//
+//  .siteHeader-tollFree {
+//    font-size: 1.5rem;
+//    font-weight: 700;
+//    //text-align: right;
+//  }
+//
+//}
+
+
+
+//.siteHeader {
+//  /**
+//   * Lay out the children of this container with
+//   * flexbox, which is horizontal by default.
+//   */
+//  display: flex;
+//
+//  /**
+//   * Make the container put as much space as possible
+//   * between its children, with the children at either
+//   * end laying flush against the container's edges.
+//   */
+//  justify-content: space-between;
+//
+//  padding: 10px;
+//  background-color: #56727C;
+//}
+//
+//.siteHeader__section {
+//  /**
+//   * Lay out the children of this container with
+//   * flexbox.
+//   */
+//  display: flex;
+//
+//  /**
+//   * Align the children in the center, along
+//   * the main axis. By default the children will
+//   * align along their top edges.
+//   */
+//  align-items: center;
+//}
+//
+//.siteHeader__item {
+//  padding: 5px 15px;
+//  font-size: 12px;
+//}
+//
+//.siteHeader__item + .siteHeader__item {
+//  margin-left: 5px;
+//}
+//
+//.siteHeader__item.is-site-header-item-selected {
+//  color: #FFFFFF;
+//  background-color: #415F69;
+//  border-radius: 4px;
+//}
+//
+//.siteHeaderLogo {
+//  font-size: 20px;
+//  line-height: 0;
+//  color: white;
+//}
+//
+//.siteHeaderButton {
+//  cursor: pointer;
+//  color: #D9E9EF;
+//}

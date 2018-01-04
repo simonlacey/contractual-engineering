@@ -1,0 +1,22 @@
+@import "theme";
+
+.footer {
+  padding: rem-calc(45 30);
+  background-color: $dark-gray;
+  color: $white;
+}
+.footer-content--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .footer-brand-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+  .footer-links {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.5);
+  }
+}
