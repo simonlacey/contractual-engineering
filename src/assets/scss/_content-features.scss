@@ -16,35 +16,61 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: flex-end;
     align-self: stretch;
     flex: 1 1 auto;
-
+    flex-wrap: wrap;
     background-color: $primary-color-light;
     color: $white;
-    //max-width: 600px;
-    //min-width: 300px;
-    //margin: rem-calc(0 30 0 0);
-    padding: rem-calc(15 30);
-  }
+    min-width: 340px;
+    @include breakpoint(small) {
+      padding: rem-calc(15);
+    }
+    @include breakpoint(medium) {
+      padding: rem-calc(30);
+    }
+    @include breakpoint(large) {
+      padding: rem-calc(30 60);
+    }
 
-  .img-container--info {
-    font-size: 1.15rem;
-    color: rgba(255,255,255,0.95);
-    text-align: left;
   }
 
   .img-container--header {
-    font-size: 2.35rem;
     font-weight: 700;
-    text-align: left;
+    text-align: right;
+    margin-bottom: rem-calc(10);
+    @include breakpoint(small) {
+      font-size: 1.5rem;
+    }
+    @include breakpoint(medium) {
+      font-size: 2rem;
+    }
+    @include breakpoint(large) {
+      font-size: 2.75rem;
+    }
+  }
+
+  .img-container--info {
+    font-weight: 400;
+    color: rgba(255,255,255,0.95);
+    text-align: right;
+    @include breakpoint(small) {
+      font-size: 1.15rem;
+    }
+    @include breakpoint(medium) {
+      font-size: 1.25rem;
+    }
+    @include breakpoint(large) {
+      font-size: 1.35rem;
+    }
   }
 
   .img-container--subheader {
     display: block;
-    font-size: 1.35rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 400;
     line-height: 1rem;
+    margin-bottom: rem-calc(15);
   }
 
   .img-text--list-right {
@@ -61,216 +87,3 @@
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-//.post {
-//  display: flex;
-//  margin-bottom: rem-calc(60);
-//}
-//
-//.postUser {
-//  flex: 0 1 auto;
-//
-//  padding-bottom: 10px;
-//}
-//
-//.postUser__portrait {
-//  display: flex;
-//  justify-content: center;
-//  align-items: center;
-//
-//  width: 100px;
-//  height: 90px;
-//  font-size: 70px;
-//  line-height: 0;
-//}
-//
-//.postUser__name {
-//  color: #57727C;
-//  font-size: 12px;
-//  font-weight: 700;
-//  line-height: 1;
-//  text-align: center;
-//}
-//
-//.postBody {
-//  flex: 1 1 0%;
-//
-//  position: relative;
-//  padding: 15px;
-//  border: 1px solid #CAD0D2;
-//  border-radius: 4px;
-//}
-//
-//.postBody:after,
-//.postBody:before {
-//  right: 100%;
-//  top: 35px;
-//  border: solid transparent;
-//  content: " ";
-//  height: 0;
-//  width: 0;
-//  position: absolute;
-//  pointer-events: none;
-//}
-//
-//.postBody:after {
-//  border-color: transparent;
-//  border-right-color: #ffffff;
-//  border-width: 8px;
-//  margin-top: -8px;
-//}
-//
-//.postBody:before {
-//  border-color: transparent;
-//  border-right-color: #CAD0D2;
-//  border-width: 9px;
-//  margin-top: -9px;
-//}
-//
-//.postBody__content {
-//  color: #57727C;
-//  font-size: 12px;
-//}
-//
-//.postBody__date {
-//  margin-top: 5px;
-//  color: #86969C;
-//  font-size: 10px;
-//  text-transform: uppercase;
-//  letter-spacing: 1px;
-//}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//.features-list--container {
-//  border: 1px solid $light-gray;
-//  .features-list--item {
-//    padding: rem-calc(15);
-//    //border: 1px solid $light-gray;
-//  }
-//  .features-list--header {
-//    display: inline-flex;
-//    font-size: 1.35rem;
-//    font-weight: 700;
-//  }
-//  .features-list--info {
-//    font-size: 1rem;
-//    color: $dark-gray;
-//  }
-//  .features-list--icon {
-//    display: inline-flex;
-//    margin-right: rem-calc(10);
-//  }
-//}
-
-//.people-you-might-know {
-//  background-color: $white;
-//  padding: 1rem 0 0;
-//  border: 1px solid $medium-gray;
-//  box-shadow: 0 0 rem-calc(50) rgba(0,0,0, 0.18);
-//
-//  .add-people-header {
-//    padding: 0 0.9375rem;
-//    border-bottom: 0.0625rem solid $medium-gray;
-//
-//    .header-title {
-//      font-weight: bold;
-//    }
-//  }
-//
-//  .add-people-section {
-//    margin: 1rem 0 0;
-//    padding-bottom: 1rem;
-//    border-bottom: 0.0625rem solid $medium-gray;
-//
-//    .about-people {
-//      display: flex;
-//      align-items: flex-start;
-//
-//      .about-people-avatar {
-//        padding-right: 0.5rem;
-//        padding-left: 0;
-//
-//        .avatar-image {
-//          width: rem-calc(80);
-//          height: rem-calc(80);
-//          border-radius: 50%;
-//          border: 0.0625rem solid $medium-gray;
-//        }
-//      }
-//
-//      .about-people-author {
-//        flex: 1 0 0;
-//
-//        .author-name {
-//          color: $black;
-//          margin: 0.375rem 0 0;
-//        }
-//
-//        .author-location,
-//        .author-mutual {
-//          color: $dark-gray;
-//          margin-bottom: 0;
-//          font-size: 0.85em;
-//        }
-//      }
-//    }
-//
-//    .add-friend {
-//      display: flex;
-//      align-items: center;
-//      justify-content: center;
-//
-//      @include breakpoint(small only) {
-//        justify-content: flex-start;
-//      }
-//
-//      .add-friend-action {
-//        margin-top: 0.7rem;
-//      }
-//    }
-//  }
-//
-//  .view-more-people {
-//    margin: .7rem 0;
-//
-//    .view-more-text {
-//      margin-bottom: 0;
-//      text-align: center;
-//
-//      .view-more-link {
-//        color: $primary-color;
-//
-//        &:hover,
-//        &:focus {
-//          text-decoration: underline;
-//        }
-//      }
-//    }
-//  }
-//}
-//

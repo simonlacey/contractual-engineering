@@ -1,5 +1,11 @@
 .header-wrapper {
-  padding: rem-calc(15 30);
+
+  @include breakpoint(small) {
+    padding: rem-calc(10);
+  }
+  @include breakpoint(medium) {
+    padding: rem-calc(15 30);
+  }
 
   .header-container {
     display: flex;
@@ -12,15 +18,27 @@
   }
 
   .logo {
-    width: 300px;
     height: auto;
+    @include breakpoint(small) {
+      width: 220px;
+    }
+    @include breakpoint(medium) {
+      width: 300px;
+    }
   }
 
   .cta-tollfree-section {
     display: flex;
-    font-size: 2.5rem;
     font-weight: 700;
     text-align: right;
-    margin-top: 5px;
+
+    @include breakpoint(small) {
+      font-size: 1.95rem;
+      margin-top: 0;
+    }
+    @include breakpoint(medium) {
+      font-size: 2rem;
+      margin-top: 5px;
+    }
   }
 }
