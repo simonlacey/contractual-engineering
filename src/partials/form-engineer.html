@@ -1,15 +1,33 @@
 <div class="form-wrapper">
     <div class="form-container">
-        <h2 class="form-header">Im looking to purchase engineering software, hardware, or cloud services</h2>
-        <p class="form-subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam aspernatur, cum dignissimos eos esse expedita fuga inventore magnam mollitia nam odit quae qui quod ratione rem sed tempore
-            ut!</p>
+        <h2 class="form-header">Hire Technician or Engineer</h2>
+        <p class="form-subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam aspernatur, cum dignissimos eos esse expedita fuga inventore magnam mollitia nam odit quae qui quod ratione rem sed tempore ut!</p>
         <form>
             <fieldset class="fieldset">
-                <legend>Check these out</legend>
-                <input id="checkbox12" type="checkbox"><label for="checkbox12">Checkbox 1</label>
-                <input id="checkbox22" type="checkbox"><label for="checkbox22">Checkbox 2</label>
-                <input id="checkbox32" type="checkbox"><label for="checkbox32">Checkbox 3</label>
+                <legend>I am looking to hire a technician:</legend>
+                <button class="button button-primary">I have a new project</button>
+                <button class="button button-primary">I have an existing project</button>
             </fieldset>
+            <fieldset class="fieldset">
+                <legend>I need a Certified Professional Engineer:</legend>
+                <input id="yes" type="checkbox"><label for="yes">Yes</label>
+                <input id="no" type="checkbox"><label for="no">No</label>
+                <input id="not_sure" type="checkbox"><label for="not_sure">I'm not sure</label>
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend>I need a Model Design or Created:</legend>
+                <input id="yes" type="checkbox"><label for="yes">Yes</label>
+                <input id="no" type="checkbox"><label for="no">No</label>
+                <input id="not_sure" type="checkbox"><label for="not_sure">I'm not sure</label>
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend>Please provide a brief description of what you need (optional):</legend>
+                <label>
+                    Description
+                    <textarea placeholder="None"></textarea>
+                </label>
+            </fieldset>
+            {{> contact-info-fieldset}}
         </form>
     </div>
 </div>
