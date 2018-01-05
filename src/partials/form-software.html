@@ -1,0 +1,31 @@
+<div class="form-wrapper">
+    <div class="form-container">
+        <h2 class="form-header">Pick the software you would like to use.</h2>
+        <p class="form-subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam aspernatur, cum dignissimos eos esse expedita fuga inventore magnam mollitia nam odit quae qui quod ratione rem sed tempore ut!</p>
+        <form>
+            <fieldset class="fieldset">
+                <legend>Available Software Types:</legend>
+                <input id="solidworks" type="checkbox"><label for="solidworks">SolidWorks</label>
+                <input id="autodesk" type="checkbox"><label for="autodesk">AutoDesk</label>
+                <input id="simsolid" type="checkbox"><label for="simsolid">SimSolid</label>
+                <input id="mastercam" type="checkbox"><label for="mastercam">MasterCam</label>
+                <input id="cloud-services" type="checkbox"><label for="cloud-services">Cloud Services</label>
+                <input id="engineering-computuers" type="checkbox"><label for="engineering-computuers">Engineering Computers</label>
+                <input id="other" type="checkbox"><label for="other">Other</label>
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend>I need this for:</legend>
+                <button class="button button-primary">Personal Use</button>
+                <button class="button button-primary">Professional Use</button>
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend>Please provide a brief description of what you need (optional):</legend>
+                <label>
+                    Description
+                    <textarea placeholder="None"></textarea>
+                </label>
+            </fieldset>
+            {{> contact-info-fieldset}}
+        </form>
+    </div>
+</div>
