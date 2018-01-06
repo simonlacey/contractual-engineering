@@ -2,7 +2,7 @@
     <div class="form-container">
         <h2 class="form-header">Pick the software you would like to use.</h2>
         <p class="form-subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam aspernatur, cum dignissimos eos esse expedita fuga inventore magnam mollitia nam odit quae qui quod ratione rem sed tempore ut!</p>
-        <form>
+        <form method="post" name="myemailform" action="form-to-email.php">
             <fieldset class="fieldset">
                 <legend>Available Software Types:</legend>
                 <input id="solidworks" type="checkbox"><label for="solidworks">SolidWorks</label>
@@ -26,6 +26,7 @@
                 </label>
             </fieldset>
             {{> contact-info-fieldset}}
+            <button type="submit" class="button button-primary button-theme">Submit</button>
         </form>
     </div>
 </div>
