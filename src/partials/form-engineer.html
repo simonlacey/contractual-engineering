@@ -2,7 +2,7 @@
     <div class="form-container">
         <h2 class="form-header">Hire Technician or Engineer</h2>
         <p class="form-subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam aspernatur, cum dignissimos eos esse expedita fuga inventore magnam mollitia nam odit quae qui quod ratione rem sed tempore ut!</p>
-        <form>
+        <form method="post" name="myemailform" action="form-to-email.php">
             <fieldset class="fieldset">
                 <legend>I am looking to hire a technician:</legend>
                 <button class="button button-primary">I have a new project</button>
@@ -28,6 +28,8 @@
                 </label>
             </fieldset>
             {{> contact-info-fieldset}}
+            <!--<button type="submit" href="thankyou.php" class="button button-primary button-theme">Submit</button>-->
+            <input type="submit" name='submit' class="button button-primary" value="submit">
         </form>
     </div>
 </div>

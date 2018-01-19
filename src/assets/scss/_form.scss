@@ -45,6 +45,13 @@ select {
   }
 }
 
+.fieldset legend {
+  font-size:1.1rem;
+  font-weight: 700;
+  color: darken($medium-gray,40);
+  padding: rem-calc(0 15);
+}
+
 select {
   margin-bottom: rem-calc(15);
 }
