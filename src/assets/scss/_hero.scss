@@ -14,10 +14,10 @@
   background-size: cover;
   padding: rem-calc(15 30);
   @include breakpoint(small) {
-    min-height: 35vh;
+    min-height: 50vh;
   }
   @include breakpoint(medium) {
-    min-height: 40vh;
+    min-height: 60vh;
   }
   @include breakpoint(large) {
     min-height: 60vh;
@@ -36,7 +36,7 @@
       max-width: 90vw;
     }
     @include breakpoint(large) {
-      max-width: 60vw;
+      max-width: 80vw;
     }
   }
 
@@ -75,6 +75,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: rem-calc(5);
   }
 
   .button-theme {
@@ -95,10 +96,24 @@
 
   .button-primary {
     background-color: $primary-color;
+    @include breakpoint(small) {
+      margin: auto;
+      margin-bottom: rem-calc(10);
+    }
+    @include breakpoint(medium) {
+      margin-right: rem-calc(15);
+    }
   }
 
   .button-secondary {
     background-color: $secondary-color;
+    @include breakpoint(small) {
+      margin: auto;
+      margin-bottom: rem-calc(10);
+    }
+    @include breakpoint(medium) {
+      margin-left: rem-calc(15);
+    }
   }
 
 }
