@@ -1,6 +1,13 @@
+@import "theme";
+
 /* -------------------------------------
 this is for all forms
 ----------------------------------------- */
+
+.button-form-lg {
+  font-size: 1.35rem;
+  padding: rem-calc(15 30);
+}
 
 /* --------------------------------------------
 custom form input styling
@@ -87,4 +94,10 @@ custom error messages
 .form-container {
   display: flex;
   flex-direction: column;
+}
+
+.fieldset-half-width {
+  display: inline;
+  width: 49%;
+  margin-right: rem-calc(5);
 }

@@ -14,7 +14,7 @@
   background-size: cover;
   padding: rem-calc(15 30);
   @include breakpoint(small) {
-    min-height: 50vh;
+    min-height: 55vh;
   }
   @include breakpoint(medium) {
     min-height: 60vh;
@@ -28,28 +28,28 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: rem-calc(-20);
+    //margin-top: rem-calc(-20);
     @include breakpoint(small) {
-      max-width: 98vw;
+      max-width: 100vw;
     }
     @include breakpoint(medium) {
       max-width: 90vw;
     }
     @include breakpoint(large) {
-      max-width: 80vw;
+      max-width: 65vw;
     }
   }
 
   .hero-header {
     text-align: center;
     @include breakpoint(small) {
-      font-size: 2.35rem;
+      font-size: 2rem;
     }
     @include breakpoint(medium) {
-      font-size: 2.75rem;
+      font-size: 3.25rem;
     }
     @include breakpoint(large) {
-      font-size: 4.15rem;
+      font-size: 3.75rem;
     }
   }
 
@@ -59,7 +59,7 @@
     @include breakpoint(small) {
       margin-bottom: rem-calc(30);
       font-size: 1.15rem;
-      line-height: 1.75rem;
+      line-height: 1.5rem;
     }
     @include breakpoint(medium) {
       margin-bottom: rem-calc(30);
@@ -75,7 +75,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: rem-calc(5);
+    //margin: rem-calc(5);
   }
 
   .button-theme {
@@ -86,126 +86,23 @@
     margin: 0 auto;
     @include breakpoint(small) {
       max-width: 350px;
+      margin: 0 auto;
       margin-bottom: rem-calc(15);
     }
     @include breakpoint(medium) {
       max-width: 380px;
+      margin: 0 auto;
+      margin-bottom: rem-calc(15);
+      //margin-right: rem-calc(15);
+    }
+    @include breakpoint(large) {
+      max-width: 380px;
       margin-bottom: rem-calc(0);
-    }
-  }
-
-  .button-primary {
-    background-color: $primary-color;
-    @include breakpoint(small) {
-      margin: auto;
-      margin-bottom: rem-calc(10);
-    }
-    @include breakpoint(medium) {
       margin-right: rem-calc(15);
     }
   }
 
-  .button-secondary {
-    background-color: $secondary-color;
-    @include breakpoint(small) {
-      margin: auto;
-      margin-bottom: rem-calc(10);
-    }
-    @include breakpoint(medium) {
-      margin-left: rem-calc(15);
-    }
-  }
-
 }
-
-//.hero-container {
-//  display: flex;
-//  flex-direction: column;
-//  justify-content: center;
-//  align-items: center;
-//  min-height: 70vh;
-//  background-color: $primary-color;
-//  color: $white;
-//  background: url(../../assets/img/hero.jpg) no-repeat center center fixed;
-//  -webkit-background-size: cover;
-//  -moz-background-size: cover;
-//  -o-background-size: cover;
-//  background-size: cover;
-//
-//  .hero-main-content {
-//    margin: 0 auto;
-//    padding: rem-calc(15);
-//    @include breakpoint(small) {
-//      max-width:100vw;
-//    }
-//    @include breakpoint(medium) {
-//      max-width: 85vw;
-//    }
-//    @include breakpoint(large) {
-//      max-width: 70vw;
-//    }
-//  }
-//
-//  .hero-header {
-//    text-align: center;
-//    @include breakpoint(small) {
-//      font-size: 2.35rem;
-//    }
-//    @include breakpoint(medium) {
-//      font-size: 2.75rem;
-//    }
-//    @include breakpoint(large) {
-//      font-size: 3.5rem;
-//    }
-//  }
-//
-//  .hero-subheader {
-//    font-size: 1.25rem;
-//    color: rgba(255,255,255,0.7);
-//    text-align: center;
-//
-//    @include breakpoint(small) {
-//      margin-bottom: rem-calc(10);
-//    }
-//    @include breakpoint(medium) {
-//      margin-bottom: rem-calc(30);
-//    }
-//  }
-//
-//  .hero-buttons {
-//    display: flex;
-//    flex-direction: row;
-//    justify-content: center;
-//    align-items: center;
-//    flex-wrap: wrap;
-//  }
-//
-//  .button {
-//    font-weight: 400;
-//    border: 1px solid $white;
-//    @include breakpoint(small) {
-//      font-size: 1.25rem;
-//      padding: rem-calc(15);
-//      margin: rem-calc(5 0);
-//    }
-//    @include breakpoint(medium) {
-//      font-size: 1.5rem;
-//      padding: rem-calc(20 30);
-//      margin: rem-calc(0 10);
-//    }
-//  }
-//
-//  .button-primary {
-//    background-color: $primary-color-light;
-//    border-color: $primary-color-dark;
-//  }
-//
-//  .button-secondary {
-//    background-color: $secondary-color-light;
-//    border-color: $secondary-color;
-//  }
-//
-//}
 
 
 

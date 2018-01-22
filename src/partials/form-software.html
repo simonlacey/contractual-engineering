@@ -1,6 +1,7 @@
 <div class="form-wrapper">
     <div class="form-container">
         <h2 class="form-header">Pick the software you would like to use.</h2>
+        <p class="form-subheader">Please complete this short form to give us a better understanding of your needs. After submitting your contact information, one of our engineering specialists will reach out through your preffered method of contact.</p>
         <form method="post" name="myemailform" action="form-to-email.php">
             <fieldset class="fieldset">
                 <legend>Available Software Types:</legend>
@@ -12,21 +13,13 @@
                 <input id="engineering-computuers" type="checkbox"><label for="engineering-computuers">Engineering Computers</label>
                 <input id="other" type="checkbox"><label for="other">Other</label>
             </fieldset>
-            <fieldset class="fieldset">
+            <fieldset class="fieldset text-center">
                 <legend>I need this for:</legend>
-                <button class="button button-primary">Personal Use</button>
-                <button class="button button-primary">Professional Use</button>
-            </fieldset>
-            <fieldset class="fieldset">
-                <legend>Please provide a brief description of what you need (optional):</legend>
-                <label>
-                    Description
-                    <textarea placeholder="None"></textarea>
-                </label>
+                <button class="button button-primary button-form-lg">Personal Use</button>
+                <button class="button button-secondary button-form-lg">Professional Use</button>
             </fieldset>
             {{> contact-info-fieldset}}
-            <!--<button type="submit" href="thankyou.php" class="button button-primary button-theme">Submit</button>-->
-            <input type="submit" name='submit' class="button button-primary" value="submit">
+            <input type="submit" name='submit' class="button button-primary button-form-lg" value="submit">
         </form>
     </div>
 </div>
