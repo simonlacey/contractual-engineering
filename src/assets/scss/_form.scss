@@ -9,6 +9,16 @@ this is for all forms
   padding: rem-calc(15 30);
 }
 
+.button-form-submit {
+  padding: rem-calc(15 60);
+  width: 48%;
+  background-color: $success-color;
+}
+
+.label-large {
+  font-size: 1rem;
+}
+
 /* --------------------------------------------
 custom form input styling
 -------------------------------------------- */
@@ -68,9 +78,13 @@ keep it separate because of height and not required info
 ----------------------------------------- */
 
 textarea {
+  background-color: lighten($form-input-background,2);
+  border-color: darken($form-input-background,15);
   border-radius: $global-radius;
   padding-left: rem-calc(15);
   color: darken(#ecf0f6,60);
+  height: 80px;
+  resize: none;
 }
 
 .gender-label {

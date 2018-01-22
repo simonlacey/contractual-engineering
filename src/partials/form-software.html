@@ -5,13 +5,13 @@
         <form method="post" name="myemailform" action="form-to-email.php">
             <fieldset class="fieldset">
                 <legend>Available Software Types:</legend>
-                <input id="solidworks" type="checkbox"><label for="solidworks">SolidWorks</label>
-                <input id="autodesk" type="checkbox"><label for="autodesk">AutoDesk</label>
-                <input id="simsolid" type="checkbox"><label for="simsolid">SimSolid</label>
-                <input id="mastercam" type="checkbox"><label for="mastercam">MasterCam</label>
-                <input id="cloud-services" type="checkbox"><label for="cloud-services">Cloud Services</label>
-                <input id="engineering-computuers" type="checkbox"><label for="engineering-computuers">Engineering Computers</label>
-                <input id="other" type="checkbox"><label for="other">Other</label>
+                <input id="solidworks" type="radio"><label class="label-large" for="solidworks">SolidWorks</label>
+                <input id="autodesk" type="radio"><label class="label-large" for="autodesk">AutoDesk</label>
+                <input id="simsolid" type="radio"><label class="label-large" for="simsolid">SimSolid</label>
+                <input id="mastercam" type="radio"><label class="label-large" for="mastercam">MasterCam</label>
+                <input id="cloud-services" type="radio"><label class="label-large" for="cloud-services">Cloud Services</label>
+                <input id="engineering-computuers" type="radio"><label class="label-large" for="engineering-computuers">Engineering Computers</label>
+                <input id="other" type="radio"><label class="label-large" for="other">Other</label>
             </fieldset>
             <fieldset class="fieldset text-center">
                 <legend>I need this for:</legend>
@@ -19,7 +19,7 @@
                 <button class="button button-secondary button-form-lg">Professional Use</button>
             </fieldset>
             {{> contact-info-fieldset}}
-            <input type="submit" name='submit' class="button button-primary button-form-lg" value="submit">
+            <!--<input type="submit" name='submit' class="button button-primary button-form-lg" value="submit">-->
         </form>
     </div>
 </div>

@@ -23,33 +23,37 @@
         </div>
         <div class="small-12 medium-6 cell">
             <label>Preferred Contact Time (optional):
-                <input type="text" placeholder="Address">
+                <input type="number" placeholder="Contact Time">
             </label>
         </div>
         <div class="small-12 medium-6 cell">
             <label>Zip:
-                <input type="text" placeholder="Zip Code">
+                <input type="number" placeholder="Zip Code">
             </label>
         </div>
         <div class="small-12 medium-6 cell">
             <label>Phone Number:
-                <input type="text" placeholder="Phone Number">
+                <input type="number" placeholder="Phone Number">
             </label>
         </div>
         <div class="small-12 medium-6 cell">
             <label>Email:
-                <input type="text" placeholder="Email Address">
+                <input type="email" placeholder="Email Address">
             </label>
         </div>
         <div class="small-12 medium-6 cell">
             <label>Please provide a brief description of what you need (optional):
-                <textarea placeholder="None"></textarea>
+                <textarea placeholder="Enter your description"></textarea>
             </label>
         </div>
-        <fieldset class="large-6 cell">
-            <legend>Preferred Contact Method:</legend>
+        <fieldset class="small-12 medium-6 cell">
+            <label>Preferred Contact Method:</label>
             <input type="radio" name="email" value="email" id="email" required><label for="email">Email</label>
             <input type="radio" name="phone" value="phone" id="phone"><label for="phone">Phone</label>
         </fieldset>
+        <hr>
+        <div class="small-12 cell end text-right">
+            <input type="submit" name='submit' class="button button-success button-form-lg button-form-submit" value="Submit">
+        </div>
     </div>
 </fieldset>
